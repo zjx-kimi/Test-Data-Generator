@@ -1,5 +1,5 @@
 # Data
-|[中文简体](https://github.com/kimi0705/Data/tree/zh-cn)|[English](https://github.com/kimi0705/Data/tree/en)|
+|[中文简体](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn)|[English](https://github.com/zjx-kimi/Test-Data-Generator/tree/en)|
 |:-:|:-:|
 - 这个仓库保存的代码是用来出数据的。
 - 这是一个终端应用。
