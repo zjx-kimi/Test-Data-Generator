@@ -128,7 +128,7 @@ int main() {
 	} else if (n == 2) {
 		fast();
 	} else {
-		cout << "输入的数为 x,那么使用时间为 x ×测试点数，质量 x 越大越好。\n请输入x:";
+		cout << "输入的数为 x,那么使用时间为 x ×测试点数，x 越大质量越好。\n请输入x:";
 		int x;
 		cin >> x;
 		user (x);
