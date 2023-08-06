@@ -29,7 +29,7 @@ int main() {
     cin >> n;
     system("cls");
     for (int i = 1; i <= n; i++) {
-            cout << "Generating Data" << i << ".in/out ";
+        cout << "Generating Data" << i << ".in/out ";
         sleep();
         char Path_in[1000], Path_out[1000];
         sprintf(Path_in , "gen.exe >Data%d.in", i); 
