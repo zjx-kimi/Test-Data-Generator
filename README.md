@@ -1,5 +1,5 @@
 # Test-Data-Generator
-|[中文简体](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-2.0)|[English](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-2.0)|
+|[中文简体](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.0)|[English](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.0)|
 |:-:|:-:|
 - The code stored in this warehouse is used to generate data.
 - This is a terminal application.
