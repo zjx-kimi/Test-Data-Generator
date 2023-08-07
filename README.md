@@ -5,3 +5,5 @@
 - This is a terminal application.
 - Just follow the prompts in the program.
 - The author's writing is not easy, please give a Star⭐before leaving.
+
+![](https://komarev.com/ghpvc/?username=zjx-kimi-Test-Data-Generator&color=9513ed)
