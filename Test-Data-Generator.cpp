@@ -38,7 +38,10 @@ void slow() {
 		cout << "Generating Data" << i << ".in/out ";
 		sleep();
 		char Path_in[1000], Path_out[1000];
-		sprintf (Path_in, "gen.exe >Data%d.in", i);
+		freopen("rand", "w", stdout);
+		cout << rand() << '\n';
+		fclose(stdout);
+		sprintf (Path_in, "gen.exe <rand >Data%d.in", i);
 		sprintf (Path_out, "std.exe <Data%d.in >Data%d.out", i, i);
 		system (Path_in);
 		system (Path_out);
@@ -74,7 +77,10 @@ void fast() {
 		cout << "Generating Data" << i << ".in/out ";
 		sleep (10);
 		char Path_in[1000], Path_out[1000];
-		sprintf (Path_in, "gen.exe >Data%d.in", i);
+		freopen("rand", "w", stdout);
+		cout << rand() << '\n';
+		fclose(stdout);
+		sprintf (Path_in, "gen.exe  <rand >Data%d.in", i);
 		sprintf (Path_out, "std.exe <Data%d.in >Data%d.out", i, i);
 		system (Path_in);
 		system (Path_out);
@@ -110,7 +116,10 @@ void user (int x) {
 		cout << "Generating Data" << i << ".in/out ";
 		sleep (x);
 		char Path_in[1000], Path_out[1000];
-		sprintf (Path_in, "gen.exe >Data%d.in", i);
+		freopen("rand", "w", stdout);
+		cout << rand() << '\n';
+		fclose(stdout);
+		sprintf (Path_in, "gen.exe  <rand >Data%d.in", i);
 		sprintf (Path_out, "std.exe <Data%d.in >Data%d.out", i, i);
 		system (Path_in);
 		system (Path_out);
@@ -118,6 +127,7 @@ void user (int x) {
 	}
 }
 int main() {
+	srand(time(0) + rand());
 	cout << "Please enter the scheme you want to use\n";
 	cout << "1. Slow mode, good quality\n";
 	cout << "2. Fast mode, poor quality\n";
