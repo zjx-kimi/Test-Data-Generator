@@ -1,4 +1,7 @@
 # Test-Data-Generator
+![](https://img.shields.io/badge/by%20kimi-Test%20Data%20Generator-brightgreen)
+![](https://komarev.com/ghpvc/?username=zjx-kimi-Test-Data-Generator&color=9513ed)
+[![](https://img.shields.io/badge/Star-Ffd700)](https://github.com/zjx-kimi/Test-Data-Generator/stargazers)
 |[中文简体](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.0)|[English](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.0)|
 |:-:|:-:|
 - The code stored in this warehouse is used to generate data.
@@ -6,5 +9,3 @@
 - Just follow the prompts in the program.
 - This version adds the Subtask feature.
 - The author's writing is not easy, please give a Star⭐before leaving.
-
-![](https://komarev.com/ghpvc/?username=zjx-kimi-Test-Data-Generator&color=9513ed)
