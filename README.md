@@ -5,3 +5,5 @@
 - 这是一个终端应用。
 - 按照程序中提示做即可。
 - 作者编写不易，请给一个 Star ⭐ 再走吧...
+
+![](https://komarev.com/ghpvc/?username=zjx-kimi-Test-Data-Generator&color=9513ed)
