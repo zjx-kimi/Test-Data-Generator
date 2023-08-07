@@ -8,7 +8,7 @@ void sleep (int x = 100) {
 	}
 	return;
 }
-int n, c, t;
+int n, m[1000000], c, t;
 void slow() {
 	cout << "Please ensure that g++. exe has been added to the environment variable.\n";
 	cout << "Please ensure that the scale has been written to std.cpp.\n";
@@ -31,21 +31,24 @@ void slow() {
 	system ("g++.exe gen.cpp -o gen.exe");
 	system ("cls");
 	/*-----------------------------------*/
-	cout << "Please enter the number of data groups:";
+	cout << "Please enter the number of Subtask groups:";
 	cin >> n;
+	cout << "Please enter the number of data per subtask, separated by spaces:";
+	for (int i = 1; i <= n; i++) cin >> m[i];
 	system ("cls");
 	for (int i = 1; i <= n; i++) {
-		cout << "Generating Data" << i << ".in/out ";
-		sleep();
-		char Path_in[1000], Path_out[1000];
-		freopen("rand", "w", stdout);
-		cout << rand() << '\n';
-		fclose(stdout);
-		sprintf (Path_in, "gen.exe <rand >Data%d.in", i);
-		sprintf (Path_out, "std.exe <Data%d.in >Data%d.out", i, i);
-		system (Path_in);
-		system (Path_out);
-		system ("cls");
+		for (int j = 1; j <= m[i]; j++) {
+			cout << "Generating Data" << i << "-" << j << ".in/out ";
+			sleep (100);
+			char Path_in[1000], Path_out[1000], Rand[100];
+			sprintf(Rand, "echo %d %d > rand.txt", i, j);
+			sprintf (Path_in, "gen.exe <rand.txt >Data%d-%d.in", i, j);
+			sprintf (Path_out, "std.exe <Data%d-%d.in >Data%d-%d.out", i, j, i, j);
+			system (Rand);
+			system (Path_in);
+			system (Path_out);
+			system ("cls");
+		}
 	}
 }
 void fast() {
@@ -70,21 +73,24 @@ void fast() {
 	system ("g++.exe gen.cpp -o gen.exe");
 	system ("cls");
 	/*-----------------------------------*/
-	cout << "Please enter the number of data groups:";
+	cout << "Please enter the number of Subtask groups:";
 	cin >> n;
+	cout << "Please enter the number of data per subtask, separated by spaces:";
+	for (int i = 1; i <= n; i++) cin >> m[i];
 	system ("cls");
 	for (int i = 1; i <= n; i++) {
-		cout << "Generating Data" << i << ".in/out ";
-		sleep (10);
-		char Path_in[1000], Path_out[1000];
-		freopen("rand", "w", stdout);
-		cout << rand() << '\n';
-		fclose(stdout);
-		sprintf (Path_in, "gen.exe  <rand >Data%d.in", i);
-		sprintf (Path_out, "std.exe <Data%d.in >Data%d.out", i, i);
-		system (Path_in);
-		system (Path_out);
-		system ("cls");
+		for (int j = 1; j <= m[i]; j++) {
+			cout << "Generating Data" << i << "-" << j << ".in/out ";
+			sleep (10);
+			char Path_in[1000], Path_out[1000], Rand[100];
+			sprintf(Rand, "echo %d %d > rand.txt", i, j);
+			sprintf (Path_in, "gen.exe <rand.txt >Data%d-%d.in", i, j);
+			sprintf (Path_out, "std.exe <Data%d-%d.in >Data%d-%d.out", i, j, i, j);
+			system (Rand);
+			system (Path_in);
+			system (Path_out);
+			system ("cls");
+		}
 	}
 }
 void user (int x) {
@@ -109,21 +115,24 @@ void user (int x) {
 	system ("g++.exe gen.cpp -o gen.exe");
 	system ("cls");
 	/*-----------------------------------*/
-	cout << "Please enter the number of data groups:";
+	cout << "Please enter the number of Subtask groups:";
 	cin >> n;
+	cout << "Please enter the number of data per subtask, separated by spaces:";
+	for (int i = 1; i <= n; i++) cin >> m[i];
 	system ("cls");
 	for (int i = 1; i <= n; i++) {
-		cout << "Generating Data" << i << ".in/out ";
-		sleep (x);
-		char Path_in[1000], Path_out[1000];
-		freopen("rand", "w", stdout);
-		cout << rand() << '\n';
-		fclose(stdout);
-		sprintf (Path_in, "gen.exe  <rand >Data%d.in", i);
-		sprintf (Path_out, "std.exe <Data%d.in >Data%d.out", i, i);
-		system (Path_in);
-		system (Path_out);
-		system ("cls");
+		for (int j = 1; j <= m[i]; j++) {
+			cout << "Generating Data" << i << "-" << j << ".in/out ";
+			sleep (x);
+			char Path_in[1000], Path_out[1000], Rand[100];
+			sprintf(Rand, "echo %d %d > rand.txt", i, j);
+			sprintf (Path_in, "gen.exe <rand.txt >Data%d-%d.in", i, j);
+			sprintf (Path_out, "std.exe <Data%d-%d.in >Data%d-%d.out", i, j, i, j);
+			system (Rand);
+			system (Path_in);
+			system (Path_out);
+			system ("cls");
+		}
 	}
 }
 int main() {
