@@ -6,3 +6,4 @@
 - Just follow the prompts in the program.
 - This version adds the ability to adjust the user's situation.
 - The author's writing is not easy, please give a Star⭐before leaving.
+![](https://komarev.com/ghpvc/?username=zjx-kimi-Test-Data-Generator&color=9513ed)
