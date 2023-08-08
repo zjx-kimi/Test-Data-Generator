@@ -9,90 +9,6 @@ void sleep (int x = 100) {
 	return;
 }
 int n, m[1000000], c, t;
-void slow() {
-	cout << "Please ensure that g++. exe has been added to the environment variable.\n";
-	cout << "Please ensure that the scale has been written to std.cpp.\n";
-	cout << "Please ensure that the data generator has been written to gen.cpp.\n";
-	system ("pause");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Deleting files";
-	sleep();
-	system ("del std.exe & del gen.exe");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Compiling standard range code";
-	sleep();
-	system ("g++.exe std.cpp -o std.exe");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Compiling data generator";
-	sleep();
-	system ("g++.exe gen.cpp -o gen.exe");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Please enter the number of Subtask groups:";
-	cin >> n;
-	cout << "Please enter the number of data per subtask, separated by spaces:";
-	for (int i = 1; i <= n; i++) cin >> m[i];
-	system ("cls");
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= m[i]; j++) {
-			cout << "Generating Data" << i << "-" << j << ".in/out ";
-			sleep (100);
-			char Path_in[1000], Path_out[1000], Rand[100];
-			sprintf(Rand, "echo %d %d > rand.txt", i, j);
-			sprintf (Path_in, "gen.exe <rand.txt >Data%d-%d.in", i, j);
-			sprintf (Path_out, "std.exe <Data%d-%d.in >Data%d-%d.out", i, j, i, j);
-			system (Rand);
-			system (Path_in);
-			system (Path_out);
-			system ("cls");
-		}
-	}
-}
-void fast() {
-	cout << "Please ensure that g++. exe has been added to the environment variable.\n";
-	cout << "Please ensure that the scale has been written to std.cpp.\n";
-	cout << "Please ensure that the data generator has been written to gen.cpp.\n";
-	system ("pause");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Deleting files";
-	sleep (10);
-	system ("del std.exe & del gen.exe");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Compiling standard range code";
-	sleep (10);
-	system ("g++.exe std.cpp -o std.exe");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Compiling data generator";
-	sleep (10);
-	system ("g++.exe gen.cpp -o gen.exe");
-	system ("cls");
-	/*-----------------------------------*/
-	cout << "Please enter the number of Subtask groups:";
-	cin >> n;
-	cout << "Please enter the number of data per subtask, separated by spaces:";
-	for (int i = 1; i <= n; i++) cin >> m[i];
-	system ("cls");
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= m[i]; j++) {
-			cout << "Generating Data" << i << "-" << j << ".in/out ";
-			sleep (10);
-			char Path_in[1000], Path_out[1000], Rand[100];
-			sprintf(Rand, "echo %d %d > rand.txt", i, j);
-			sprintf (Path_in, "gen.exe <rand.txt >Data%d-%d.in", i, j);
-			sprintf (Path_out, "std.exe <Data%d-%d.in >Data%d-%d.out", i, j, i, j);
-			system (Rand);
-			system (Path_in);
-			system (Path_out);
-			system ("cls");
-		}
-	}
-}
 void user (int x) {
 	cout << "Please ensure that g++. exe has been added to the environment variable.\n";
 	cout << "Please ensure that the scale has been written to std.cpp.\n";
@@ -143,9 +59,9 @@ int main() {
 	cout << "3. Custom mode\n";
 	cin >> n;
 	if (n == 1) {
-		slow();
+		user (100);
 	} else if (n == 2) {
-		fast();
+		user (10);
 	} else {
 		cout << "If the input number is x, then the usage time is x × test points, and the larger the x, the better the quality. \nPlease enter x:";
 		int x;
