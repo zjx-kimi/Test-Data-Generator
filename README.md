@@ -4,7 +4,7 @@
 ![](https://komarev.com/ghpvc/?username=zjx-kimi-Test-Data-Generator&color=9513ed)
 [![](http://img.shields.io/badge/Star-Ffd700)](https://github.com/zjx-kimi/Test-Data-Generator/stargazers)
 ![](http://img.shields.io/badge/zjx--kimi-give%20me%20a%20star-blue?logo=github)
-|[中文简体](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.0)|[English](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.0)|
+|[中文简体](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.1)|[English](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.1)|
 |:-:|:-:|
 - 这个仓库保存的代码是用来出数据的。
 - 这是一个终端应用。
