@@ -5,8 +5,11 @@
 ![](https://komarev.com/ghpvc/?username=zjx-kimi-Test-Data-Generator&color=9513ed)
 [![](http://img.shields.io/badge/Star-Ffd700)](https://github.com/zjx-kimi/Test-Data-Generator/stargazers)
 ![](http://img.shields.io/badge/zjx--kimi-give%20me%20a%20star-blue?logo=github)
-|[中文简体](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.1)|[English](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.1)|
+
+|中文简体|English|
 |:-:|:-:|
+|[Link](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.1)|[Link](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.1)|
+
 - The code stored in this warehouse is used to generate data.
 - This is a terminal application.
 - Just follow the prompts in the program.
