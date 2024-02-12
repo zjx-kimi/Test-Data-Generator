@@ -7,6 +7,9 @@
 |中文简体|English|
 |:-:|:-:|
 |[Link](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.1)|[Link](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.1)|
+
+[**Code Download**](/Test-Data-Generator.cpp)
+
 - 这个仓库保存的代码是用来出数据的。
 - 这是一个终端应用。
 - 按照程序中提示做即可。
