@@ -10,7 +10,7 @@
 |:-:|:-:|
 |[Link](https://github.com/zjx-kimi/Test-Data-Generator/tree/zh-cn-3.1)|[Link](https://github.com/zjx-kimi/Test-Data-Generator/tree/en-3.1)|
 
-![Code download](/Test-Data-Generator.cpp)
+[**Code download**](/Test-Data-Generator.cpp)
 - The code stored in this warehouse is used to generate data.
 - This is a terminal application.
 - Just follow the prompts in the program.
